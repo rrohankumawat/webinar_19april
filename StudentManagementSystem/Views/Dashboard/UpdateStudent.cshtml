@@ -1,0 +1,33 @@
+﻿@using StudentManagementSystem.Dto
+@model StudentDto
+
+
+
+<div class="container">
+    <form asp-action="UpdateStudentRecord">
+        <div>
+            <label>Name</label>
+            <input type="text" placeholder="Enter student name ..." name="Name" asp-for="Name" />
+        </div>
+        <div>
+            <label>Email</label>
+            <input type="text" placeholder="Enter student Email ..." name="Email" asp-for="Email" />
+        </div>
+        <div>
+            <label>Father's Name</label>
+            <input type="text" placeholder="Enter student's father's name ..." name="FatherName" asp-for="FatherName" />
+        </div>
+        <div>
+            <label>Mother's Name</label>
+            <input type="text" placeholder="Enter student's mother's name ..." name="MotherName" asp-for="MotherName" />
+        </div>
+        <div>
+            <label>City</label>
+            <input type="text" placeholder="Enter student's city ..." name="City" asp-for="City" />
+        </div>
+        <input type="hidden" name="Id" asp-for="Id" />
+        <div>
+            <input class="btn btn-success" type="submit" value="Update Student" />
+        </div>
+    </form>
+</div>
